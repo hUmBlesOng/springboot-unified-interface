@@ -16,8 +16,8 @@ public class CommonException extends RuntimeException {
     }
 
     public CommonException(ResultCode failed) {
-        this.code=failed.getCode();
-        this.msg=failed.getMsg();
+        this.code=failed.getRtnCode();
+        this.msg=failed.getRtnMsg();
     }
 
     public int getCode() {

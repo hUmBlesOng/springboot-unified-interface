@@ -18,27 +18,27 @@ public enum ResultCode {
     USER_NOT_LOGIN(2002,"用户还未登录,请先登录"),
     NO_PERMISSION(2003,"权限不足,请联系管理员");
 
-    private int code;
-    private String msg;
+    private int rtnCode;
+    private String rtnMsg;
 
-    ResultCode(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
+    ResultCode(int rtnCode, String rtnMsg) {
+        this.rtnCode = rtnCode;
+        this.rtnMsg = rtnMsg;
     }
 
-    public int getCode() {
-        return code;
+    public int getRtnCode() {
+        return rtnCode;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setRtnCode(int rtnCode) {
+        this.rtnCode = rtnCode;
     }
 
-    public String getMsg() {
-        return msg;
+    public String getRtnMsg() {
+        return rtnMsg;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setRtnMsg(String rtnMsg) {
+        this.rtnMsg = rtnMsg;
     }
 }

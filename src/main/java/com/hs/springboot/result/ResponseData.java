@@ -9,11 +9,11 @@ public class ResponseData<T> {
     /**
      * 状态码，比如1000代表响应成功
      */
-    private int code;
+    private int rtnCode;
     /**
      * 响应信息，用来说明响应情况
      */
-    private String msg;
+    private String rtnMsg;
     /**
      * 响应的具体数据
      */
@@ -24,25 +24,25 @@ public class ResponseData<T> {
     }
 
     public ResponseData(ResultCode resultCode, T data) {
-        this.code = resultCode.getCode();
-        this.msg = resultCode.getMsg();
+        this.rtnCode = resultCode.getRtnCode();
+        this.rtnMsg = resultCode.getRtnMsg();
         this.data = data;
     }
 
-    public int getCode() {
-        return code;
+    public int getRtnCode() {
+        return rtnCode;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setRtnCode(int rtnCode) {
+        this.rtnCode = rtnCode;
     }
 
-    public String getMsg() {
-        return msg;
+    public String getRtnMsg() {
+        return rtnMsg;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setRtnMsg(String rtnMsg) {
+        this.rtnMsg = rtnMsg;
     }
 
     public T getData() {
